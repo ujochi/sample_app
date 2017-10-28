@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   # get 'sessions/new'
 
   resources :users
-  get  '/singup', to: 'users#new'
+  get  '/signup', to: 'users#new'
   post '/signup',  to: 'users#create'
   get  '/home', to: 'static_pages#home'
   get  '/about', to: 'static_pages#about'
