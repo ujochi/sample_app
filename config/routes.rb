@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  # get 'sessions/new'
+  resources :password_resets,     only: [:new, :create, :edit, :update]
   resources :account_activations, only: [:edit]
   resources :users
   get  '/signup', to: 'users#new'
